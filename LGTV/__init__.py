@@ -27,41 +27,31 @@ hello_data = {
     "payload": {
         "forcePairing": False,
         "manifest": {
-            "appVersion": "1.1",
-            "manifestVersion": 1,
+            "appVersion":
+            "1.1",
+            "manifestVersion":
+            1,
             "permissions": [
-                "LAUNCH",
-                "LAUNCH_WEBAPP",
-                "APP_TO_APP",
-                "CLOSE",
-                "TEST_OPEN",
-                "TEST_PROTECTED",
-                "CONTROL_AUDIO",
-                "CONTROL_DISPLAY",
-                "CONTROL_INPUT_JOYSTICK",
-                "CONTROL_INPUT_MEDIA_RECORDING",
-                "CONTROL_INPUT_MEDIA_PLAYBACK",
-                "CONTROL_INPUT_TV",
-                "CONTROL_POWER",
-                "READ_APP_STATUS",
-                "READ_CURRENT_CHANNEL",
-                "READ_INPUT_DEVICE_LIST",
-                "READ_NETWORK_STATE",
-                "READ_RUNNING_APPS",
-                "READ_TV_CHANNEL_LIST",
-                "WRITE_NOTIFICATION_TOAST",
-                "READ_POWER_STATE",
+                "LAUNCH", "LAUNCH_WEBAPP", "APP_TO_APP", "CLOSE", "TEST_OPEN",
+                "TEST_PROTECTED", "CONTROL_AUDIO", "CONTROL_DISPLAY",
+                "CONTROL_INPUT_JOYSTICK", "CONTROL_INPUT_MEDIA_RECORDING",
+                "CONTROL_INPUT_MEDIA_PLAYBACK", "CONTROL_INPUT_TV",
+                "CONTROL_POWER", "READ_APP_STATUS", "READ_CURRENT_CHANNEL",
+                "READ_INPUT_DEVICE_LIST", "READ_NETWORK_STATE",
+                "READ_RUNNING_APPS", "READ_TV_CHANNEL_LIST",
+                "WRITE_NOTIFICATION_TOAST", "READ_POWER_STATE",
                 "READ_COUNTRY_INFO"
             ],
-            "signatures": [
-                {
-                    "signature": "eyJhbGdvcml0aG0iOiJSU0EtU0hBMjU2Iiwia2V5SWQiOiJ0ZXN0LXNpZ25pbmctY2VydCIsInNpZ25hdHVyZVZlcnNpb24iOjF9.hrVRgjCwXVvE2OOSpDZ58hR+59aFNwYDyjQgKk3auukd7pcegmE2CzPCa0bJ0ZsRAcKkCTJrWo5iDzNhMBWRyaMOv5zWSrthlf7G128qvIlpMT0YNY+n/FaOHE73uLrS/g7swl3/qH/BGFG2Hu4RlL48eb3lLKqTt2xKHdCs6Cd4RMfJPYnzgvI4BNrFUKsjkcu+WD4OO2A27Pq1n50cMchmcaXadJhGrOqH5YmHdOCj5NSHzJYrsW0HPlpuAx/ECMeIZYDh6RMqaFM2DXzdKX9NmmyqzJ3o/0lkk/N97gfVRLW5hA29yeAwaCViZNCP8iC9aO0q9fQojoa7NQnAtw==",
-                    "signatureVersion": 1
-                }
-            ],
+            "signatures": [{
+                "signature":
+                "eyJhbGdvcml0aG0iOiJSU0EtU0hBMjU2Iiwia2V5SWQiOiJ0ZXN0LXNpZ25pbmctY2VydCIsInNpZ25hdHVyZVZlcnNpb24iOjF9.hrVRgjCwXVvE2OOSpDZ58hR+59aFNwYDyjQgKk3auukd7pcegmE2CzPCa0bJ0ZsRAcKkCTJrWo5iDzNhMBWRyaMOv5zWSrthlf7G128qvIlpMT0YNY+n/FaOHE73uLrS/g7swl3/qH/BGFG2Hu4RlL48eb3lLKqTt2xKHdCs6Cd4RMfJPYnzgvI4BNrFUKsjkcu+WD4OO2A27Pq1n50cMchmcaXadJhGrOqH5YmHdOCj5NSHzJYrsW0HPlpuAx/ECMeIZYDh6RMqaFM2DXzdKX9NmmyqzJ3o/0lkk/N97gfVRLW5hA29yeAwaCViZNCP8iC9aO0q9fQojoa7NQnAtw==",
+                "signatureVersion": 1
+            }],
             "signed": {
-                "appId": "com.lge.test",
-                "created": "20140509",
+                "appId":
+                "com.lge.test",
+                "created":
+                "20140509",
                 "localizedAppNames": {
                     "": "LG Remote App",
                     "ko-KR": u"리모컨 앱",
@@ -71,25 +61,19 @@ hello_data = {
                     "": "LG Electronics"
                 },
                 "permissions": [
-                    "TEST_SECURE",
-                    "CONTROL_INPUT_TEXT",
-                    "CONTROL_MOUSE_AND_KEYBOARD",
-                    "READ_INSTALLED_APPS",
-                    "READ_LGE_SDX",
-                    "READ_NOTIFICATIONS",
-                    "SEARCH",
-                    "WRITE_SETTINGS",
-                    "WRITE_NOTIFICATION_ALERT",
-                    "CONTROL_POWER",
-                    "READ_CURRENT_CHANNEL",
-                    "READ_RUNNING_APPS",
-                    "READ_UPDATE_INFO",
-                    "UPDATE_FROM_REMOTE_APP",
-                    "READ_LGE_TV_INPUT_EVENTS",
+                    "TEST_SECURE", "CONTROL_INPUT_TEXT",
+                    "CONTROL_MOUSE_AND_KEYBOARD", "READ_INSTALLED_APPS",
+                    "READ_LGE_SDX", "READ_NOTIFICATIONS", "SEARCH",
+                    "WRITE_SETTINGS", "WRITE_NOTIFICATION_ALERT",
+                    "CONTROL_POWER", "READ_CURRENT_CHANNEL",
+                    "READ_RUNNING_APPS", "READ_UPDATE_INFO",
+                    "UPDATE_FROM_REMOTE_APP", "READ_LGE_TV_INPUT_EVENTS",
                     "READ_TV_CURRENT_TIME"
                 ],
-                "serial": "2f930e2d2cfe083771f68e4fe7bb07",
-                "vendorId": "com.lge"
+                "serial":
+                "2f930e2d2cfe083771f68e4fe7bb07",
+                "vendorId":
+                "com.lge"
             }
         },
         "pairingType": "PROMPT"
@@ -133,7 +117,7 @@ def LGTVScan(first_only=False):
                     'address': address[0]
                 })
         except Exception as e:
-            print(e.message)
+            print(str(e))
             attempts -= 1
             continue
 
@@ -177,12 +161,7 @@ def methods(cls):
 
 
 def getCommands(cls):
-    excludes = [
-        'opened',
-        'closed',
-        'received_message',
-        'exec_command'
-    ]
+    excludes = ['opened', 'closed', 'received_message', 'exec_command']
     out = []
     m = methods(cls)
     for method in m:
@@ -222,13 +201,15 @@ class LGTVClient(WebSocketClient):
             else:
                 self.__ip = None
         self.__handshake_done = False
-        super(LGTVClient, self).__init__('ws://' + self.__hostname + ':3000/', exclude_headers=["Origin"])
+        super(LGTVClient, self).__init__('ws://' + self.__hostname + ':3000/',
+                                         exclude_headers=["Origin"])
         self.__waiting_command = None
 
     def __exec_command(self):
         if self.__handshake_done is False:
             print("Error: Handshake failed")
-        if self.__waiting_command is None or len(self.__waiting_command.keys()) == 0:
+        if self.__waiting_command is None or len(
+                self.__waiting_command.keys()) == 0:
             self.close()
             return
         command = list(self.__waiting_command.keys())[0]
@@ -259,13 +240,25 @@ class LGTVClient(WebSocketClient):
             self.__waiting_callback = self.__prompt
         self.send(json.dumps(hello_data))
 
+    #def closed(self, code, reason=None):
+    #    print(
+    #        json.dumps(
+    #            {"closing": {
+    #                "code": code,
+    #                "reason": reason.decode('utf-8')
+    #            }}))
+
     def closed(self, code, reason=None):
-        print(json.dumps({
-            "closing": {
-                "code": code,
-                "reason": reason.decode('utf-8')
-            }
-        }))
+        if reason is not None:
+            decodedReason = reason.decode('utf-8')
+            if decodedReason != '':
+                print(
+                    json.dumps({
+                        "closing": {
+                            "code": code,
+                            "reason": reason.decode('utf-8')
+                        }
+                    }))
 
     def received_message(self, response):
         if self.__waiting_callback:
@@ -276,7 +269,8 @@ class LGTVClient(WebSocketClient):
         if response['type'] == "error":
             print(json.dumps(response))
             self.close()
-        if "returnValue" in response["payload"] and response["payload"]["returnValue"] is True:
+        if "returnValue" in response[
+                "payload"] and response["payload"]["returnValue"] is True:
             print(json.dumps(response))
             self.close()
         else:
@@ -303,104 +297,150 @@ class LGTVClient(WebSocketClient):
 
     def on(self):
         if not self.__macAddress:
-            print("Client must have been powered on and paired before power on works")
+            print(
+                "Client must have been powered on and paired before power on" +
+                " works"
+            )
         wakeonlan.send_magic_packet(self.__macAddress)
 
     def off(self):
         self.__send_command("", "request", "ssap://system/turnOff")
 
     def openBrowserAt(self, url, callback=None):
-        self.__send_command("", "request", "ssap://system.launcher/open", {"target": url}, callback)
+        self.__send_command("", "request", "ssap://system.launcher/open",
+                            {"target": url}, callback)
 
     def notification(self, message, callback=None):
-        self.__send_command("", "request", "ssap://system.notifications/createToast", {"message": message}, callback)
+        self.__send_command("", "request",
+                            "ssap://system.notifications/createToast",
+                            {"message": message}, callback)
 
     def mute(self, muted=True, callback=None):
-        self.__send_command("", "request", "ssap://audio/setMute", {"mute": muted}, callback)
+        self.__send_command("", "request", "ssap://audio/setMute",
+                            {"mute": muted}, callback)
 
     def audioStatus(self, callback=None):
-        self.__send_command("status_", "request", "ssap://audio/getStatus", None, callback)
+        self.__send_command("status_", "request", "ssap://audio/getStatus",
+                            None, callback)
 
     def audioVolume(self, callback=None):
-        self.__send_command("status_", "request", "ssap://audio/getVolume", None, callback)
+        self.__send_command("status_", "request", "ssap://audio/getVolume",
+                            None, callback)
 
     def setVolume(self, level, callback=None):
-        self.__send_command("", "request", "ssap://audio/setVolume", {"volume": level}, callback)
+        self.__send_command("", "request", "ssap://audio/setVolume",
+                            {"volume": level}, callback)
 
     def volumeUp(self, callback=None):
-        self.__send_command("volumeup_", "request", "ssap://audio/volumeUp", None, callback)
+        self.__send_command("volumeup_", "request", "ssap://audio/volumeUp",
+                            None, callback)
 
     def volumeDown(self, callback=None):
-        self.__send_command("volumedown_", "request", "ssap://audio/volumeDown", None, callback)
+        self.__send_command("volumedown_", "request",
+                            "ssap://audio/volumeDown", None, callback)
 
     def inputMediaPlay(self, callback=None):
-        self.__send_command("", "request", "ssap://media.controls/play", None, callback)
+        self.__send_command("", "request", "ssap://media.controls/play", None,
+                            callback)
 
     def inputMediaStop(self, callback=None):
-        self.__send_command("", "request", "ssap://media.controls/stop", None, callback)
+        self.__send_command("", "request", "ssap://media.controls/stop", None,
+                            callback)
 
     def inputMediaPause(self, callback=None):
-        self.__send_command("", "request", "ssap://media.controls/pause", None, callback)
+        self.__send_command("", "request", "ssap://media.controls/pause", None,
+                            callback)
 
     def inputMediaRewind(self, callback=None):
-        self.__send_command("", "request", "ssap://media.controls/rewind", None, callback)
+        self.__send_command("", "request", "ssap://media.controls/rewind",
+                            None, callback)
 
     def inputMediaFastForward(self, callback=None):
-        self.__send_command("", "request", "ssap://media.controls/fastForward", None, callback)
+        self.__send_command("", "request", "ssap://media.controls/fastForward",
+                            None, callback)
 
     def inputChannelUp(self, callback=None):
-        self.__send_command("", "request", "ssap://tv/channelUp", None, callback)
+        self.__send_command("", "request", "ssap://tv/channelUp", None,
+                            callback)
 
     def inputChannelDown(self, callback=None):
-        self.__send_command("", "request", "ssap://tv/channelDown", None, callback)
+        self.__send_command("", "request", "ssap://tv/channelDown", None,
+                            callback)
 
     def setTVChannel(self, channel, callback=None):
-        self.__send_command("", "request", "ssap://tv/openChannel", {"channelId": channel}, callback)
+        self.__send_command("", "request", "ssap://tv/openChannel",
+                            {"channelId": channel}, callback)
 
     def getTVChannel(self, callback=None):
-        self.__send_command("channels_", "request", "ssap://tv/getCurrentChannel", None, callback)
+        self.__send_command("channels_", "request",
+                            "ssap://tv/getCurrentChannel", None, callback)
 
     def listChannels(self, callback=None):
-        self.__send_command("channels_", "request", "ssap://tv/getChannelList", None, callback)
+        self.__send_command("channels_", "request", "ssap://tv/getChannelList",
+                            None, callback)
 
     def input3DOn(self, callback=None):
-        self.__send_command("", "request", "ssap://com.webos.service.tv.display/set3DOn", None, callback)
+        self.__send_command("", "request",
+                            "ssap://com.webos.service.tv.display/set3DOn",
+                            None, callback)
 
     def input3DOff(self, callback=None):
-        self.__send_command("", "request", "ssap://com.webos.service.tv.display/set3DOff", None, callback)
+        self.__send_command("", "request",
+                            "ssap://com.webos.service.tv.display/set3DOff",
+                            None, callback)
 
     def listInputs(self, callback=None):
-        self.__send_command("input_", "request", "ssap://tv/getExternalInputList", None, callback)
+        self.__send_command("input_", "request",
+                            "ssap://tv/getExternalInputList", None, callback)
 
     def setInput(self, input_id, callback=None):
-        self.__send_command("", "request", "ssap://tv/switchInput", {"inputId": input_id}, callback)
+        self.__send_command("", "request", "ssap://tv/switchInput",
+                            {"inputId": input_id}, callback)
 
     def swInfo(self, callback=None):
-        self.__send_command("sw_info_", "request", "ssap://com.webos.service.update/getCurrentSWInformation", None, callback)
+        self.__send_command(
+            "sw_info_", "request",
+            "ssap://com.webos.service.update/getCurrentSWInformation", None,
+            callback)
 
     def listServices(self, callback=None):
-        self.__send_command("services_", "request", "ssap://api/getServiceList", None, callback)
+        self.__send_command("services_", "request",
+                            "ssap://api/getServiceList", None, callback)
 
     def listApps(self, callback=None):
-        self.__send_command("launcher_", "request", "ssap://com.webos.applicationManager/listLaunchPoints", None, callback)
+        self.__send_command(
+            "launcher_", "request",
+            "ssap://com.webos.applicationManager/listLaunchPoints", None,
+            callback)
 
     def openAppWithPayload(self, payload, callback=None):
-        self.__send_command("", "request", "ssap://com.webos.applicationManager/launch", payload, callback)
+        self.__send_command("", "request",
+                            "ssap://com.webos.applicationManager/launch",
+                            payload, callback)
 
     def startApp(self, appid, callback=None):
-        self.__send_command("", "request", "ssap://system.launcher/launch", {'id': appid}, callback)
+        self.__send_command("", "request", "ssap://system.launcher/launch",
+                            {'id': appid}, callback)
 
     def closeApp(self, appid, callback=None):
-        self.__send_command("", "request", "ssap://system.launcher/close", {'id': appid}, callback)
+        self.__send_command("", "request", "ssap://system.launcher/close",
+                            {'id': appid}, callback)
 
     def openYoutubeId(self, videoid, callback=None):
         self.openYoutubeURL("http://www.youtube.com/tv?v=" + videoid, callback)
 
     def openYoutubeURL(self, url, callback=None):
-        payload = {"id": "youtube.leanback.v4", "params": {"contentTarget": url}}
-        self.__send_command("", "request", "ssap://system.launcher/launch", payload, callback)
+        payload = {
+            "id": "youtube.leanback.v4",
+            "params": {
+                "contentTarget": url
+            }
+        }
+        self.__send_command("", "request", "ssap://system.launcher/launch",
+                            payload, callback)
 
-    def __send_command(self, prefix, msgtype, uri, payload=None, callback=None):
+    def __send_command(self, prefix, msgtype, uri, payload=None,
+                       callback=None):
         if not callback:
             callback = self.__defaultHandler
         self.__waiting_callback = callback

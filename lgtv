@@ -1,0 +1,8 @@
+#! /usr/bin/env nix-shell
+#! nix-shell -i python3 -p "[python3] ++ (with pkgs.python37Packages; [ fn ws4py wakeonlan ])"
+# <<END Extended Shebang>>
+
+import LGTV.main as lgtv
+lgtv.main()
+
+# vim: set filetype=python :
